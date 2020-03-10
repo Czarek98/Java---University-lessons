@@ -24,7 +24,7 @@ public class Main {
         Human me = new Human();
         me.firstname = "Czarek";
         me.lastname = "Bohdanowicz";
-        me.pet = dog;
+        me.pet = lion;
         //me.phone =
 
         me.pet.feed();

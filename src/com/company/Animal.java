@@ -5,12 +5,12 @@ import java.io.File;
 public class Animal {
     String name;
     final String species;
-    private Double weight=7.5;
+    private Double weight;
     File pic;
 
     static final Double DEFAULT_DOG_WEIGHT = 8.0;
     static final Double DEFAULT_LION_WEIGHT = 120.0;
-    static final Double DEFAULT_MOUSE_WEIGHT = 1.0;
+    static final Double DEFAULT_MOUSE_WEIGHT = 0.05;
 
     public Animal(String species) {
         this.species = species;
