@@ -26,15 +26,15 @@ public class Animal {
 
     void feed() {
         if (weight<1)
-            System.out.println("Sorry your pet is dead.");
+            System.out.println("Sorry you cant feed your dead pet.");
         else
             weight++;
             System.out.println("thx for food bro, my weight is now " + weight);
     }
 
     void walk(){
-        if (weight<1)
-            System.out.println("Sorry your pet is dead.");
+        if (weight<0)
+            System.out.println("Sorry you cant walk.");
         else
             weight--;
             System.out.println("thx for food bro, my weight is now" + weight);
