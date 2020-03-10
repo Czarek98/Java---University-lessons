@@ -33,7 +33,6 @@ public class Main {
         me.pet.feed();
 
         System.out.println(me.pet.name);
-        dog.feed();
 
     }
 }
