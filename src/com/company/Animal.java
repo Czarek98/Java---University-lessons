@@ -9,6 +9,8 @@ public class Animal {
     File pic;
 
     static final Double DEFAULT_DOG_WEIGHT = 8.0;
+    static final Double DEFAULT_LION_WEIGHT = 120.0;
+    static final Double DEFAULT_MOUSE_WEIGHT = 1.0;
 
     public Animal(String species) {
         this.species = species;
@@ -16,9 +18,9 @@ public class Animal {
             this.weight=DEFAULT_DOG_WEIGHT;
         }
         else if(species=="lion"){
-            this.weight=28.0;
+            this.weight=DEFAULT_LION_WEIGHT;
         }else if(species=="mouse"){
-            this.weight=1.0;
+            this.weight=DEFAULT_MOUSE_WEIGHT;
         }
     }
 
