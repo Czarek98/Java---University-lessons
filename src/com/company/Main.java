@@ -18,19 +18,28 @@ public class Main {
         Animal lion= new Animal("lion");
         lion.name = "leo";
 
-        dog.feed();
-        lion.feed();
+        //dog.feed();
+        //lion.feed();
 
         Human me = new Human();
         me.firstname = "Czarek";
         me.lastname = "Bohdanowicz";
-        me.pet = lion;
+        me.pet = dog;
         //me.phone =
 
         me.pet.feed();
-        me.pet.feed();
-        me.pet.feed();
-        me.pet.feed();
+
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
+        me.pet.walk();
 
         System.out.println(me.pet.name);
 
