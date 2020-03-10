@@ -27,7 +27,11 @@ public class Main {
         me.pet = dog;
         //me.phone =
 
-        //me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+        me.pet.feed();
+
         System.out.println(me.pet.name);
         dog.feed();
 
