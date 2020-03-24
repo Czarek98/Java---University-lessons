@@ -52,8 +52,6 @@ public class Main {
         //me.pet.walk();
         //me.pet.walk();
 
-        //me2.tuning();
-
         //System.out.println(me.pet.name);
 
     }
