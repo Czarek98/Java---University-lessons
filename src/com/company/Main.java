@@ -25,23 +25,28 @@ public class Main {
         me.firstname = "Czarek";
         me.lastname = "Bohdanowicz";
         me.pet = dog;
-        //me.phone =
+        me.car = new Car("Alfa Romeo", "147", 2004);
 
-        me.pet.feed();
+        out.println(me.car.brand);
+        out.println("I earn " + me.getSalary());
 
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
-        me.pet.walk();
 
-        System.out.println(me.pet.name);
+
+        //me.pet.feed();
+
+        //me.pet.walk();
+        //me.pet.walk();
+        //me.pet.walk();
+        //me.pet.walk();
+        //me.pet.walk();
+        //me.pet.walk();
+        //me.pet.walk();
+        //me.pet.walk();
+        //me.pet.walk();
+
+        //me2.tuning();
+
+        //System.out.println(me.pet.name);
 
     }
 }
