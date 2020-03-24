@@ -5,7 +5,7 @@ public class Human {
     String lastname;
     Phone phone;
     Animal pet;
-    Car car;
+   private Car car;
 
     private  Double salary = 100.0;
 
@@ -18,10 +18,27 @@ public class Human {
             System.out.println("Sorry im not an idiot ");
         }
         else {
-            System.out.println("my earn is ");
-
+            //System.out.println("my earn is ");
+            this.salary = salary;
         }
-        this.salary = salary;
+
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        if(car.prize <= this.salary){
+            System.out.println("Car was bought by cash");
+            this.car=car;
+        } else if (car.prize<=this.salary * 12){
+            System.out.println("You bought car on credit");
+            this.car=car;
+        } else {
+            System.out.println("Car is too expensive");
+        }
+
     }
 }
 

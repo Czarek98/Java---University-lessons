@@ -7,6 +7,9 @@ public class Car {
    public String plates;
 
 
+    public  Double prize = 7000.0;
+
+
     public Car(String brand, String model, Integer yearOfproduction) {
         this.brand = brand;
         this.model = model;

@@ -25,10 +25,18 @@ public class Main {
         me.firstname = "Czarek";
         me.lastname = "Bohdanowicz";
         me.pet = dog;
-        me.car = new Car("Alfa Romeo", "147", 2004);
+        me.setCar(new Car("Alfa Romeo", "147", 2004));
 
-        out.println(me.car.brand);
+        out.println(me.getCar().brand + " "+me.getCar().model);
+
+
+
+        //out.println(me.car.brand);
         out.println("I earn " + me.getSalary());
+        me.setSalary(200.0);
+        out.println("I earn " + me.getSalary());
+
+
 
 
 
