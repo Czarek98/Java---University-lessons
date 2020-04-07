@@ -18,7 +18,7 @@ public class Main {
         lion.name = "leo";
 
         //dog.feed();
-        //lion.feed();
+
 
         Human me = new Human();
         me.firstname = "Czarek";
