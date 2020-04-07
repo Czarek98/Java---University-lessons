@@ -40,6 +40,9 @@ public class Human {
         }
 
     }
+    public String toString(){
+        return "Human" + this.firstname + " " + this.lastname + " " + this.pet;
+    }
 }
 
 

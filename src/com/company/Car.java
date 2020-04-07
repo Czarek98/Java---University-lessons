@@ -15,4 +15,8 @@ public class Car {
         this.model = model;
         this.yearOfproduction = yearOfproduction;
     }
+
+    public String toString(){
+        return "Car" + this.brand + " " + this.model + " " + this.yearOfproduction;
+    }
 }

@@ -46,5 +46,8 @@ public class Animal {
             System.out.println("Sorry you cant walk.");
         }
     }
+    public String toString(){
+        return "Pet" + this.name + " " + this.species + " " + this.weight;
+    }
 
 }
