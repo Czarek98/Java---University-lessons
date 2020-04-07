@@ -22,6 +22,7 @@ public class Animal {
         }else if(species=="mouse"){
             this.weight=DEFAULT_MOUSE_WEIGHT;
         }
+
     }
 
     void feed() {
