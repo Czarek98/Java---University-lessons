@@ -4,7 +4,7 @@ public class Car extends Device {
    public String plates;
 
 
-    public  Double prize = 12000.0;
+
 
 
     public Car(String brand, String model, Integer yearOfproduction) {
