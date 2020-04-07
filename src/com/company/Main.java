@@ -48,6 +48,8 @@ public class Main {
         me.setCar(alfa);
         wife.setCar(alfa);
 
+        System.out.println(me);
+        System.out.println(me.getCar());
 
 
 

@@ -47,7 +47,7 @@ public class Animal {
         }
     }
     public String toString(){
-        return "Pet" + this.name + " " + this.species + " " + this.weight;
+        return "Pet " + this.name + " " + this.species + " " + this.weight;
     }
 
 }
