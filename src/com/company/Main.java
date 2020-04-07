@@ -1,7 +1,6 @@
 package com.company;
 
-import java.math.BigDecimal;
-import java.sql.SQLOutput;
+import com.company.devices.Car;
 
 import static java.lang.System.*;
 
@@ -50,6 +49,9 @@ public class Main {
 
         System.out.println(me);
         System.out.println(me.getCar());
+        System.out.println(wife);
+        System.out.println(wife.getCar());
+
 
 
 
