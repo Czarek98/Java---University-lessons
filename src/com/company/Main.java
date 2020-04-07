@@ -25,9 +25,13 @@ public class Main {
         me.firstname = "Czarek";
         me.lastname = "Bohdanowicz";
         me.pet = dog;
-        me.setCar(new Car("Alfa Romeo", "147", 2004));
 
-        out.println(me.getCar().brand + " "+me.getCar().model);
+        Human wife = new Human();
+        me.firstname = "Żona";
+        me.lastname = "Moja";
+
+
+        //out.println(me.getCar().brand + " "+me.getCar().model);
 
 
 
@@ -35,6 +39,17 @@ public class Main {
         out.println("I earn " + me.getSalary());
         me.setSalary(200.0);
         out.println("I earn " + me.getSalary());
+        me.setSalary(1000.0);
+        out.println("I earn " + me.getSalary());
+
+        Car alfa = new Car("Alfa Romeo", "147", 2004);
+        //wife.setCar(new Car("Alfa Romeo", "147", 2004));
+
+        me.setCar(alfa);
+        wife.setCar(alfa);
+
+
+
 
 
 
