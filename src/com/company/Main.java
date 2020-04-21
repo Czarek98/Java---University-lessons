@@ -1,13 +1,14 @@
 package com.company;
 
 import com.company.devices.Car;
+import com.company.devices.Device;
 
 import static java.lang.System.*;
 
 public class Main {
     public static void main(String[] args) {
         Animal dog = new Animal("dog");
-        dog.name = "Akita";
+        dog.name = "Brutus";
 
 
         //Animal my_dog = new Animal();
@@ -41,7 +42,11 @@ public class Main {
         me.setSalary(1000.0);
         out.println("I earn " + me.getSalary());
 
-        Car alfa = new Car("Alfa Romeo", "147", 2004);
+        Car alfa = new Car("Alfa Romeo",
+                "147",
+                2004);
+
+
         //wife.setCar(new Car("Alfa Romeo", "147", 2004));
 
         me.setCar(alfa);
@@ -49,13 +54,25 @@ public class Main {
 
         System.out.println(me);
         System.out.println(me.getCar());
+
+        Device fridge = new Device("samsung", "9000", 2020) {
+            @Override
+            public void Sell() {
+
+            }
+
+            @Override
+            public void turnON() {
+
+            }
+        };
+        out.println(fridge);
+
+        //me.Sell();
+        //me.pet.Sell();
+
         //System.out.println(wife);
         //System.out.println(wife.getCar());
-
-
-
-
-
 
 
 

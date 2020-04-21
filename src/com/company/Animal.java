@@ -2,7 +2,7 @@ package com.company;
 
 import java.io.File;
 
-public class Animal {
+public class Animal implements Saleable, Edible{
     String name;
     final String species;
     private Double weight;
@@ -54,4 +54,18 @@ public class Animal {
         return "Pet " + this.name + " " + this.species + " " + this.weight;
     }
 
+    @Override
+    public void Sell() {
+        if(this.species.equals("homo sapiens")){
+            System.out.println("You cant sell a human!");
+        }
+        else{
+            System.out.println(this.name + " sold!");
+        }
+    }
+
+    @Override
+    public void beEaten() {
+        System.out.println("What a tasty " + this.name);
+    }
 }
