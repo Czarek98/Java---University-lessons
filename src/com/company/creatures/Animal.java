@@ -1,10 +1,11 @@
 package com.company.creatures;
 
+import com.company.Feedable;
 import com.company.Saleable;
 
 import java.io.File;
 
-public abstract class Animal implements Saleable {
+public abstract class Animal implements Saleable, Feedable {
     static final Double DEFAULT_COW_WEIGHT = 200.0;
     static final Double DEFAULT_PIG_WEIGHT = 100.0;
     public final String species;
@@ -15,28 +16,41 @@ public abstract class Animal implements Saleable {
     static final Double DEFAULT_MOUSE_WEIGHT = 0.05;
     public String name;
     protected Double weight;
+    public final Double foodWeight;
+    public final Double DEFAULT_DOG_FOODWEIGHT = 8.0;
+    public final Double DEFAULT_LION_FOODWEIGHT = 8.0;
+    public final Double DEFAULT_MOUSE_FOODWEIGHT = 8.0;
+    public final Double DEFAULT_COW_FOODWEIGHT = 8.0;
+    public final Double DEFAULT_PIG_FOODWEIGHT = 8.0;
 
-    public Animal(String species) {
+
+    public Animal(String species, Double foodWeight) {
         this.species = species;
         switch (species) {
             case "dog":
                 this.weight = DEFAULT_DOG_WEIGHT;
+                this.foodWeight = DEFAULT_DOG_FOODWEIGHT;
                 break;
             case "lion":
                 this.weight = DEFAULT_LION_WEIGHT;
+                this.foodWeight = DEFAULT_LION_FOODWEIGHT;
                 break;
             case "mouse":
                 this.weight = DEFAULT_MOUSE_WEIGHT;
+                this.foodWeight = DEFAULT_MOUSE_FOODWEIGHT;
                 break;
             case "cow":
                 this.weight = DEFAULT_COW_WEIGHT;
+                this.foodWeight = DEFAULT_COW_FOODWEIGHT;
                 break;
             case "pig":
                 this.weight = DEFAULT_PIG_WEIGHT;
+                this.foodWeight = DEFAULT_PIG_FOODWEIGHT;
                 break;
         }
 
     }
+
 
     public void feed() {
         if (weight != 1 && weight > 0) {

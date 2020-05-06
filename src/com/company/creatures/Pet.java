@@ -6,4 +6,9 @@ public class Pet extends Animal implements Saleable {
     public Pet(String species) {
         super(species);
     }
+
+    @Override
+    public void feed(Double foodWeight) {
+
+    }
 }

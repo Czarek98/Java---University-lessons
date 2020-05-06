@@ -37,11 +37,15 @@ public class Human extends Animal {
         this.car = car;
     }
 
-    public String toString(){
+    public String toString() {
         return "Human " + this.firstname + " " + this.lastname + " " + this.pet;
     }
 
 
+    @Override
+    public void feed(Double foodWeight) {
+
+    }
 }
 
 

@@ -7,7 +7,7 @@ import com.company.creatures.Pet;
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
-import static java.lang.System.out;
+import java.net.MalformedURLException;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +39,7 @@ public class Main {
             e.printStackTrace();
         }
 
+        /*
         out.println("Moj samochod " + me.getCar());
         out.println("Samochod brata " + brat.getCar());
         out.println("Moja forsa " + me.getSalary());
@@ -47,6 +48,17 @@ public class Main {
         out.println("fon brata " + brat.phone);
         out.println("moj zwierzak " + me.pet);
         out.println("brata zwierzak " + brat.pet);
+
+
+
+         */
+        String[] apps = {"facebóg", "skype", "łazap"};
+
+        try {
+            me.phone.installAnApp(apps);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
 
     }
 }
