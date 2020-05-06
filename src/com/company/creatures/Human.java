@@ -1,16 +1,15 @@
-package com.company;
+package com.company.creatures;
 
 import com.company.devices.Car;
 import com.company.devices.Phone;
 
 public class Human extends Animal {
-    String firstname;
-    String lastname;
-    Phone phone;
-    Animal pet;
-   private Car car;
-
-    private  Double salary = 100.0;
+    public String firstname;
+    public String lastname;
+    public Phone phone;
+    public Animal pet;
+    Double salary = 10000.0;
+    private Car car;
 
     public Human() {
         super("homo sapiens");
@@ -25,7 +24,6 @@ public class Human extends Animal {
             System.out.println("Sorry im not an idiot ");
         }
         else {
-            //System.out.println("my earn is ");
             this.salary = salary;
         }
 
@@ -36,20 +34,14 @@ public class Human extends Animal {
     }
 
     public void setCar(Car car) {
-        if(car.prize <= this.salary){
-            System.out.println("Car was bought by cash");
-            this.car=car;
-        } else if (car.prize<=this.salary * 12){
-            System.out.println("You bought car on credit");
-            this.car=car;
-        } else {
-            System.out.println("Car is too expensive");
-        }
-
+        this.car = car;
     }
+
     public String toString(){
         return "Human " + this.firstname + " " + this.lastname + " " + this.pet;
     }
+
+
 }
 
 
