@@ -26,6 +26,7 @@ public abstract class Animal implements Saleable, Feedable {
 
     public Animal(String species, Double foodWeight) {
         this.species = species;
+        this.foodWeight = foodWeight;
         switch (species) {
             case "dog":
                 this.weight = DEFAULT_DOG_WEIGHT;
